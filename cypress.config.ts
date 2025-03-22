@@ -24,7 +24,7 @@ module.exports = defineConfig({
     runMode: 2,
   },
   env: {
-    apiUrl: "http://localhost:3001",
+    apiUrl: "http://localhost:3001/",
     mobileViewportWidthBreakpoint: 414,
     coverage: false,
     codeCoverage: {
