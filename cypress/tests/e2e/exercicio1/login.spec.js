@@ -1,4 +1,4 @@
-import Data from '../../../data/database.json'
+import Data from '../../../../data/database.json'
 const dados = Data
 
 describe('Login test in the Real World App', () => {
