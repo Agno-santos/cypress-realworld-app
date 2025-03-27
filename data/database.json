@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 160953,
+      "balance": 150953,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -76,48 +76,15 @@
       "modifiedAt": "2024-03-07T00:07:36.510Z"
     },
     {
-      "id": "t7_TRE-z5",
-      "uuid": "d7b32f5e-c0ea-4645-831e-141a7afa9104",
-      "firstName": "teste",
-      "lastName": "de resgistro",
-      "username": "usertest",
-      "password": "$2a$10$6xM2P10FbFJ0pjd5HtcFC.zWsOd/klKK6ME6zC9led8IGw/3ura7G",
+      "id": "ipXRjtlF2",
+      "uuid": "b3ea0edc-d46f-449b-9fad-18a8e0eb17fa",
+      "firstName": "test",
+      "lastName": "of signup",
+      "username": "agno",
+      "password": "$2a$10$1r68b5x3K6ifUMuMAu9hbOx/jjD/FCX1Ix.9FafdIVzEWs17dUKrS",
       "balance": 0,
-      "createdAt": "2025-03-25T18:39:38.568Z",
-      "modifiedAt": "2025-03-25T18:39:38.568Z"
-    },
-    {
-      "id": "9B3B9LZoj",
-      "uuid": "eb8f9d12-28a5-417b-8692-f13af0455d8b",
-      "firstName": "teste",
-      "lastName": "de resgistro",
-      "username": "usertest",
-      "password": "$2a$10$6aABR7RDfSqESVemv1.MBe/zdyGSOyNxPKvuK69WzNbdX9gOPYz4W",
-      "balance": 0,
-      "createdAt": "2025-03-25T18:42:41.628Z",
-      "modifiedAt": "2025-03-25T18:42:41.628Z"
-    },
-    {
-      "id": "2QM6v_pnp",
-      "uuid": "84f83c27-8e88-4e68-bd5e-10e66453e9f1",
-      "firstName": "teste",
-      "lastName": "de resgistro",
-      "username": "usertest",
-      "password": "$2a$10$NhWhZGZBgmZdYAeMGSelseAEdfbuo59giksyuq0qZFfh8EM8XhnZm",
-      "balance": 0,
-      "createdAt": "2025-03-25T18:44:48.767Z",
-      "modifiedAt": "2025-03-25T18:44:48.767Z"
-    },
-    {
-      "id": "c9_0jbfdp",
-      "uuid": "b0475b5e-ae19-405b-9169-2c62b4734de2",
-      "firstName": "teste",
-      "lastName": "de resgistro",
-      "username": "usertest",
-      "password": "$2a$10$GUMG/AQoN44fauoMc1gZ1.06w6XuSH95ZWe/7yi/lJ9TX3gA/J8AO",
-      "balance": 0,
-      "createdAt": "2025-03-25T18:45:40.967Z",
-      "modifiedAt": "2025-03-25T18:45:40.967Z"
+      "createdAt": "2025-03-27T12:38:02.962Z",
+      "modifiedAt": "2025-03-27T12:38:02.962Z"
     }
   ],
   "contacts": [
@@ -297,17 +264,6 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
-    },
-    {
-      "id": "R7rq-OXgN",
-      "uuid": "e852bd95-3c00-4105-b3a8-a50ed171d4c0",
-      "userId": "t7_TRE-z5",
-      "bankName": "testbank",
-      "accountNumber": "987654321",
-      "routingNumber": "123456789",
-      "isDeleted": false,
-      "createdAt": "2025-03-25T18:45:48.252Z",
-      "modifiedAt": "2025-03-25T18:45:48.252Z"
     }
   ],
   "transactions": [
@@ -9910,17 +9866,6 @@
       "requestResolvedAt": "",
       "createdAt": "2023-11-10T07:15:28.127Z",
       "modifiedAt": "2024-03-07T21:58:09.668Z"
-    },
-    {
-      "id": "fxYx20AXg",
-      "uuid": "daa9f163-c84b-4b7a-a81f-88bee4fc4edd",
-      "amount": 10000,
-      "description": "SendedMoneyForTed",
-      "receiverId": "uBmeaz5pX",
-      "senderId": "t7_TRE-z5",
-      "status": "complete",
-      "createdAt": "2025-03-25T18:45:53.732Z",
-      "modifiedAt": "2025-03-25T18:45:53.732Z"
     }
   ],
   "likes": [
@@ -10497,16 +10442,6 @@
       "isRead": false,
       "createdAt": "2024-02-01T18:53:45.699Z",
       "modifiedAt": "2024-03-07T17:13:52.110Z"
-    },
-    {
-      "id": "iBFYfLSX5T",
-      "uuid": "aad65507-37ca-4219-ae41-e8e086f1f1d8",
-      "userId": "uBmeaz5pX",
-      "transactionId": "fxYx20AXg",
-      "status": "received",
-      "isRead": false,
-      "createdAt": "2025-03-25T18:45:53.928Z",
-      "modifiedAt": "2025-03-25T18:45:53.928Z"
     }
   ],
   "banktransfers": [
@@ -11059,16 +10994,6 @@
       "transactionId": "gaggAe7wNoiC",
       "createdAt": "2023-03-24T22:18:19.407Z",
       "modifiedAt": "2024-03-07T13:32:42.472Z"
-    },
-    {
-      "id": "wC4Oc0lGAm",
-      "uuid": "69c70e48-cad5-4845-af6f-4bd1693f6f08",
-      "userId": "t7_TRE-z5",
-      "amount": 10000,
-      "transactionId": "fxYx20AXg",
-      "type": "withdrawal",
-      "createdAt": "2025-03-25T18:45:53.828Z",
-      "modifiedAt": "2025-03-25T18:45:53.828Z"
     }
   ]
 }

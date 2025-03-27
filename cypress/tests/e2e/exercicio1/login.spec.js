@@ -1,26 +1,21 @@
 import Data from '../../../../data/database.json'
+import LoginPage from '../../../pages/loginPage.js'
+
 const dados = Data
+const loginPage = new LoginPage()
 
 describe('Login test in the Real World App', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    loginPage.accessLoginPage()
   })
   it('it must do login with a valid user', () => {
-    cy.get('#username').type(dados.users[0].username)
-    cy.get('#password').type('s3cret')
-    cy.get('[data-test="signin-submit"]').click()
-    cy.location('pathname').should('equal','/signin')
- 
+    loginPage.loginWithUser(dados.users[0].username,'s3cret')
   })
   it('it must to show error message with a invalid user', () => {  
-    cy.get('#username').type('invalid username')
-    cy.get('#password').type('s3cret')
-    cy.get('[data-test="signin-submit"]').click()
+    loginPage.failWithInvalidUser('invalid user','s3cret')
   })
 
   it('it must to show error message with a invalid password', () => {
-    cy.get('#username').type(dados.users[0].username)
-    cy.get('#password').type('invalid password')
-    cy.get('[data-test="signin-submit"]').click()
+    loginPage.failWithInvalidPassword(dados.users[0].username,'invalid password')
   })
 })
