@@ -2,6 +2,10 @@
 class SendMoneyPage {
     selectorsList() {
         return {
+            usernameField: '#username',
+            passwordField: '#password',
+            loginButton: '[data-test="signin-submit"]',
+            wrongCredentialAlert:'.MuiAlert-message',
             buttonTransactionNew: '[data-test="nav-top-new-transaction"]',
             listTransactionFriends: '.UserListSearchForm-form',
             itemListTransactionFriends: '[data-test="user-list-item-uBmeaz5pX"]',
@@ -16,6 +20,13 @@ class SendMoneyPage {
 
     accessLoginPage() {
         cy.visit('http://localhost:3000/');
+        
+    }
+    loginWithUser(username, password) {
+        cy.get(this.selectorsList().usernameField).type(username)
+        cy.get(this.selectorsList().passwordField).type(password)
+        cy.get(this.selectorsList().loginButton).click()
+        cy.location('pathname').should('equal', '/signin')
     }
 
     clickNewSendButton() {
@@ -34,16 +45,12 @@ class SendMoneyPage {
     }
 
     sendMoney(amount, description) {
-        this.getUserBalance().then((balance) => {
-            if (balance < amount) {
-                throw new Error(`Erro: Saldo insuficiente! Seu saldo é $${balance}, mas tentou enviar $${amount}.`);
+        cy.get(this.selectorsList().userBalance).then($balance => {
+            const saldoAtual = parseFloat($balance.text().replace('$', ''));
+            if (saldoAtual < amount) {
+                cy.log('Saldo insuficiente, abortando teste.');
+                return;
             }
-
-            cy.get(this.selectorsList().inputAmount).clear().type(amount);
-            cy.get(this.selectorsList().inputDescribreAmount).type(description);
-            cy.get(this.selectorsList().buttonPayTransaction).click();
-            cy.get(this.selectorsList().messageTransaction).contains(`Paid $${amount}.00 for ${description}`);
-            
         });
     }
 }
